@@ -1,0 +1,5 @@
+packages/
+
+WIXInstaller/obj/
+Bootstrapper/obj/
+AdditionalInstaller/obj/

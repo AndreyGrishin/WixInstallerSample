@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="SpyRemover_Installer" Name="SpyRemover Installer" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="SpyRemover_Installer">
+            <Component Id="Interop.IWshRuntimeLibrary.dll" Guid="2AA8DEEA-59C2-4461-A576-1D9CD03134EA">
+                <File Id="Interop.IWshRuntimeLibrary.dll" KeyPath="yes" Source="SourceDir\SpyRemover Installer\Interop.IWshRuntimeLibrary.dll" />
+                <RegistryValue Root="HKCR" Key="CLSID\{093FF999-1EA0-4079-9525-9614C3504B74}\InprocServer32\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.WshNetworkClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{093FF999-1EA0-4079-9525-9614C3504B74}\InprocServer32\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{093FF999-1EA0-4079-9525-9614C3504B74}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{093FF999-1EA0-4079-9525-9614C3504B74}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{093FF999-1EA0-4079-9525-9614C3504B74}\InprocServer32" Name="Class" Value="IWshRuntimeLibrary.WshNetworkClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{093FF999-1EA0-4079-9525-9614C3504B74}\InprocServer32" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{093FF999-1EA0-4079-9525-9614C3504B74}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{093FF999-1EA0-4079-9525-9614C3504B74}\InprocServer32" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0D43FE01-F093-11CF-8940-00A0C9054228}\InprocServer32\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.FileSystemObjectClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0D43FE01-F093-11CF-8940-00A0C9054228}\InprocServer32\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0D43FE01-F093-11CF-8940-00A0C9054228}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0D43FE01-F093-11CF-8940-00A0C9054228}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0D43FE01-F093-11CF-8940-00A0C9054228}\InprocServer32" Name="Class" Value="IWshRuntimeLibrary.FileSystemObjectClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0D43FE01-F093-11CF-8940-00A0C9054228}\InprocServer32" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0D43FE01-F093-11CF-8940-00A0C9054228}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0D43FE01-F093-11CF-8940-00A0C9054228}\InprocServer32" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{72C24DD5-D70A-438B-8A42-98424B88AFB8}\InprocServer32\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.WshShellClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{72C24DD5-D70A-438B-8A42-98424B88AFB8}\InprocServer32\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{72C24DD5-D70A-438B-8A42-98424B88AFB8}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{72C24DD5-D70A-438B-8A42-98424B88AFB8}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{72C24DD5-D70A-438B-8A42-98424B88AFB8}\InprocServer32" Name="Class" Value="IWshRuntimeLibrary.WshShellClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{72C24DD5-D70A-438B-8A42-98424B88AFB8}\InprocServer32" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{72C24DD5-D70A-438B-8A42-98424B88AFB8}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{72C24DD5-D70A-438B-8A42-98424B88AFB8}\InprocServer32" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC22-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.IWshShell_ClassClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC22-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC22-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC22-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC22-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32" Name="Class" Value="IWshRuntimeLibrary.IWshShell_ClassClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC22-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC22-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC22-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC26-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.IWshNetwork_ClassClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC26-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC26-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC26-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC26-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32" Name="Class" Value="IWshRuntimeLibrary.IWshNetwork_ClassClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC26-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC26-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F935DC26-1CF0-11D0-ADB9-00C04FD58A0B}\InprocServer32" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{0202949F-06C0-3CA9-8715-F37A030EBFE8}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.__MIDL___MIDL_itf_iwshom_0001_0016_0001" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{0202949F-06C0-3CA9-8715-F37A030EBFE8}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{0202949F-06C0-3CA9-8715-F37A030EBFE8}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{0202949F-06C0-3CA9-8715-F37A030EBFE8}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{24F83B9F-933F-3BD8-9DCF-0E84F1A73D7C}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.__MIDL___MIDL_itf_iwshom_0000_0000_0002" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{24F83B9F-933F-3BD8-9DCF-0E84F1A73D7C}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{24F83B9F-933F-3BD8-9DCF-0E84F1A73D7C}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{24F83B9F-933F-3BD8-9DCF-0E84F1A73D7C}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{27D4BE33-B4CC-3E80-B5CB-42735D930F36}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.DriveTypeConst" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{27D4BE33-B4CC-3E80-B5CB-42735D930F36}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{27D4BE33-B4CC-3E80-B5CB-42735D930F36}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{27D4BE33-B4CC-3E80-B5CB-42735D930F36}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{45B878D1-CA9A-35E6-8CBE-D4E72AB2D074}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.WshExecStatus" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{45B878D1-CA9A-35E6-8CBE-D4E72AB2D074}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{45B878D1-CA9A-35E6-8CBE-D4E72AB2D074}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{45B878D1-CA9A-35E6-8CBE-D4E72AB2D074}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{577B8843-5486-3520-BCCC-3E6E6096BA5C}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.__MIDL___MIDL_itf_iwshom_0000_0000_0001" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{577B8843-5486-3520-BCCC-3E6E6096BA5C}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{577B8843-5486-3520-BCCC-3E6E6096BA5C}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{577B8843-5486-3520-BCCC-3E6E6096BA5C}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5FC70597-E511-3BCC-8DFD-5C7E6B0AA2BC}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.__MIDL___MIDL_itf_iwshom_0000_0000_0003" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5FC70597-E511-3BCC-8DFD-5C7E6B0AA2BC}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5FC70597-E511-3BCC-8DFD-5C7E6B0AA2BC}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5FC70597-E511-3BCC-8DFD-5C7E6B0AA2BC}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{92D34728-1BC5-3B36-86F9-020F4CE20172}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.StandardStreamTypes" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{92D34728-1BC5-3B36-86F9-020F4CE20172}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{92D34728-1BC5-3B36-86F9-020F4CE20172}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{92D34728-1BC5-3B36-86F9-020F4CE20172}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{9417AC4A-E6DF-386D-AB1A-41D66974335B}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.CompareMethod" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{9417AC4A-E6DF-386D-AB1A-41D66974335B}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{9417AC4A-E6DF-386D-AB1A-41D66974335B}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{9417AC4A-E6DF-386D-AB1A-41D66974335B}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{A125B856-6947-3A85-9F48-74E87DA639C7}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.__MIDL___MIDL_itf_iwshom_0001_0037_0001" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{A125B856-6947-3A85-9F48-74E87DA639C7}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{A125B856-6947-3A85-9F48-74E87DA639C7}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{A125B856-6947-3A85-9F48-74E87DA639C7}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D0035859-9CA5-3575-8CA0-18D907BB67EB}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.SpecialFolderConst" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D0035859-9CA5-3575-8CA0-18D907BB67EB}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D0035859-9CA5-3575-8CA0-18D907BB67EB}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D0035859-9CA5-3575-8CA0-18D907BB67EB}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D2E28123-09F8-33B8-B253-8A71A1617EC6}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.__MIDL___MIDL_itf_iwshom_0000_0000_0004" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D2E28123-09F8-33B8-B253-8A71A1617EC6}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D2E28123-09F8-33B8-B253-8A71A1617EC6}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D2E28123-09F8-33B8-B253-8A71A1617EC6}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D3C7B769-54A4-3A46-B12F-753D11AFF69B}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.FileAttribute" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D3C7B769-54A4-3A46-B12F-753D11AFF69B}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D3C7B769-54A4-3A46-B12F-753D11AFF69B}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D3C7B769-54A4-3A46-B12F-753D11AFF69B}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D66E686D-2B11-3056-BE17-FDCC4EFF3993}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.Tristate" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D66E686D-2B11-3056-BE17-FDCC4EFF3993}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D66E686D-2B11-3056-BE17-FDCC4EFF3993}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D66E686D-2B11-3056-BE17-FDCC4EFF3993}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{E768FB07-B02E-3E6F-915B-0ACD3EA06C65}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.IOMode" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{E768FB07-B02E-3E6F-915B-0ACD3EA06C65}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{E768FB07-B02E-3E6F-915B-0ACD3EA06C65}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{E768FB07-B02E-3E6F-915B-0ACD3EA06C65}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{F935DC1F-1CF0-11D0-ADB9-00C04FD58A0B}\1.0.0.0" Name="Class" Value="IWshRuntimeLibrary.WshWindowStyle" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{F935DC1F-1CF0-11D0-ADB9-00C04FD58A0B}\1.0.0.0" Name="Assembly" Value="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{F935DC1F-1CF0-11D0-ADB9-00C04FD58A0B}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{F935DC1F-1CF0-11D0-ADB9-00C04FD58A0B}\1.0.0.0" Name="CodeBase" Value="file:///[#Interop.IWshRuntimeLibrary.dll]" Type="string" Action="write" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+</Wix>

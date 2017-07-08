@@ -1,0 +1,33 @@
+﻿<Window x:Class="WIXInstaller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WIXInstaller"
+        mc:Ignorable="d"
+         Title="WIXInstaller" Height="400" Width="600" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="White">
+        <Frame
+            x:Name="MainFrame"
+            HorizontalContentAlignment="Stretch"
+            VerticalContentAlignment="Stretch"
+            NavigationUIVisibility="Hidden"
+            Source="Pages/MainPage.xaml" Margin="0,100,0,0" />
+        <TextBlock HorizontalAlignment="Center" Margin="226,22,160,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" FontFamily="Script MT Bold" Foreground="#FFE98803">
+            <TextBlock.Effect>
+                <DropShadowEffect Opacity="0.8" BlurRadius="1" ShadowDepth="2"/>
+            </TextBlock.Effect>
+            <Run>Your</Run>
+            <Run Foreground="#FFD8396F">Logo</Run>
+        </TextBlock>
+        <Image HorizontalAlignment="Left" Height="100" Margin="207,80,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image HorizontalAlignment="Left" Height="80" Margin="141,15,0,0" VerticalAlignment="Top" Width="80" Source="/WIXInstaller;component/Assets/logo.png"/>
+    </Grid>
+</Window>

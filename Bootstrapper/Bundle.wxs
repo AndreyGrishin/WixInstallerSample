@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" 
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" 
+     xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+  <Bundle Name="My Test Application" 
+          Version="1.0.0.0" 
+          Manufacturer="S Media Link" 
+          UpgradeCode="C82A383C-751A-43B8-90BF-A250F7BC2863" 
+          IconSourceFile="..\logoicon.ico"  >
+    
+    <BootstrapperApplicationRef Id="ManagedBootstrapperApplicationHost">
+      <Payload SourceFile="..\WIXInstaller\BootstrapperCore.config"/>
+      <Payload SourceFile="..\WIXInstaller\bin\Debug\WIXInstaller.dll"/>
+      <Payload SourceFile="..\WIXInstaller\bin\Debug\GalaSoft.MvvmLight.dll"/>
+      <Payload SourceFile="..\WIXInstaller\bin\Debug\Microsoft.Practices.ServiceLocation.dll"/>
+      <Payload SourceFile="..\WIXInstaller\bin\Debug\Microsoft.WindowsAPICodePack.dll"/>
+      <Payload SourceFile="..\WIXInstaller\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll"/>
+
+      <Payload SourceFile="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.ServiceProcess.dll"/>
+      <Payload SourceFile="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Configuration.Install.dll"/>
+      <Payload SourceFile="C:\Program Files (x86)\WiX Toolset v3.11\SDK\Microsoft.Deployment.WindowsInstaller.dll"/>
+    </BootstrapperApplicationRef>
+
+    <Chain>
+      <PackageGroupRef Id='Netfx4Full'/>
+      <MsiPackage SourceFile="..\AdditionalInstaller\bin\Debug\AdditionalInstaller.msi" Id="InstallationPackageId" Cache="yes" Visible="no"/>
+    </Chain>
+  </Bundle>
+
+  <Fragment>
+    <WixVariable Id="WixMbaPrereqPackageId" Value="Netfx4Full" />
+    <WixVariable Id="WixMbaPrereqLicenseUrl" Value="NetfxLicense.rtf" />
+
+    <util:RegistrySearch Root="HKLM" Key="SOFTWARE\Microsoft\Net Framework Setup\NDP\v4\Full" Value="Version" Variable="Netfx4FullVersion" />
+    <util:RegistrySearch Root="HKLM" Key="SOFTWARE\Microsoft\Net Framework Setup\NDP\v4\Full" Value="Version" Variable="Netfx4x64FullVersion" Win64="yes" />
+
+    <PackageGroup Id="Netfx4Full">
+      <ExePackage Id="Netfx4Full" Cache="no" Compressed="yes" PerMachine="yes" Permanent="yes" Vital="yes"
+                  SourceFile="D:\desctop\Статья WIX\WIXInstallerSample\NDP452-KB2901954-Web.exe"
+                  DownloadUrl="http://go.microsoft.com/fwlink/?LinkId=164193"
+                  DetectCondition="Netfx4FullVersion AND (NOT VersionNT64 OR Netfx4x64FullVersion)" />
+    </PackageGroup>
+  </Fragment>
+</Wix>
+
+
