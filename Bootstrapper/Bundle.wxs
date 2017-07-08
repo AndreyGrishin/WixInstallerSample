@@ -36,7 +36,7 @@
 
     <PackageGroup Id="Netfx4Full">
       <ExePackage Id="Netfx4Full" Cache="no" Compressed="yes" PerMachine="yes" Permanent="yes" Vital="yes"
-                  SourceFile="D:\desctop\Статья WIX\WIXInstallerSample\NDP452-KB2901954-Web.exe"
+                  SourceFile="YourPath\Статья WIX\WIXInstallerSample\NDP452-KB2901954-Web.exe"
                   DownloadUrl="http://go.microsoft.com/fwlink/?LinkId=164193"
                   DetectCondition="Netfx4FullVersion AND (NOT VersionNT64 OR Netfx4x64FullVersion)" />
     </PackageGroup>
